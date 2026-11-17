@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보 처리방침 · Bayani: Auto Ascent</title>
+  <meta name="description" content="Bayani: Auto Ascent가 저장하는 정보, 그 이유, 그리고 삭제하는 방법.">
+  <link rel="alternate" hreflang="en" href="https://kuzostudiosph.github.io/bayani/privacy/">
+  <link rel="alternate" hreflang="ja" href="https://kuzostudiosph.github.io/bayani/privacy/ja/">
+  <link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<main>
+  <img class="logo" src="../../../assets/bayani-logo.png" alt="Bayani: Auto Ascent">
+  <p class="meta"><a href="../">English</a> · <a href="../ja/">日本語</a> · 한국어</p>
+  <h1>개인정보 처리방침</h1>
+  <p class="meta">시행일 2026년 11월 17일 · KuzoStudiosPH (필리핀) ·
+    <a href="mailto:kuzostudiosph@gmail.com">kuzostudiosph@gmail.com</a></p>
+  <p class="meta">이 문서는 영어 원문의 번역본입니다. 내용이 다를 경우 <a href="../">영어 원문</a>이 우선합니다.</p>
+
+  <p>Bayani: Auto Ascent는 iPhone, Android, PC용 오토배틀러입니다. 완전히 오프라인으로 즐길 수 있으며, 온라인 대전에서는
+    다른 플레이어와 함께 탑을 오를 수 있습니다. 이 방침은 게임이 어떤 정보를 저장하는지, 그 이유는 무엇인지, 그리고 어떻게
+    삭제할 수 있는지 설명합니다.</p>
+
+  <h2>요약</h2>
+  <div class="card">
+    <ul>
+      <li>실명, 이메일, 연락처, 결제 정보는 <strong>수집하지 않으며</strong>, 계정을 만들 필요도 없습니다.</li>
+      <li>광고를 표시하거나 광고 추적기를 사용하거나 데이터를 판매하지 <strong>않습니다</strong>.</li>
+      <li>스마트폰에서는 인터넷에 연결되어 있으면, 게임이 시작될 때 기기에서 만들어진 <strong>익명 ID</strong>로 당사 서버에
+        로그인합니다. 서버에는 <strong>티켓</strong>과 그 변동 기록이 저장됩니다.</li>
+      <li><strong>구매</strong>는 Apple 또는 Google을 통해 이루어집니다. 구매가 처리되는 동안 Unity의 구매 서비스가 구매 정보와
+        기기 정보를 받습니다 (<a href="#purchases">구매</a> 참조).</li>
+      <li>온라인 데이터는 게임 안의 <strong>설정 &gt; 온라인 데이터 삭제</strong>에서 언제든지 삭제할 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <h2>1. 기기에 남는 정보</h2>
+  <p>진행 상황, 설정, 등반 기록, 해금한 난이도, 정식판 보유 여부는 <strong>사용자의 기기에만</strong> 저장되며 기기 밖으로
+    전송되지 않습니다. 게임을 삭제하면 함께 삭제됩니다.</p>
+
+  <h2>2. 당사 서버에 저장되는 정보 (온라인 대전)</h2>
+  <p>온라인 대전과 티켓은 당사의 게임 서버(Nakama, 싱가포르의 DigitalOcean 서버)에서 운영됩니다. iPhone과 Android에서는
+    인터넷에 연결된 상태로 게임을 처음 시작할 때, 기기가 앱에 제공하는 식별자로 <strong>익명 계정</strong>이 만들어집니다
+    (온라인 대전 전에도 매일 티켓을 받을 수 있도록 하기 위해서입니다). 이 계정은 이름, 이메일, Apple·Google·Steam 계정과
+    연결되어 있지 않습니다. 이 계정에 다음 정보를 저장합니다:</p>
+  <ul>
+    <li>사용자의 <strong>티켓</strong>과 각 변동 기록 (첫 티켓, 매일 티켓, 대전 참가·승리·환불, 티켓 팩 구매) 및 날짜</li>
+    <li>마지막으로 매일 티켓을 받은 날짜</li>
+    <li>구매한 <strong>티켓 팩</strong>마다: 상품, 스토어의 거래 ID와 날짜, 스토어의 확인 정보 (같은 구매가 두 번 계산되지 않도록)</li>
+  </ul>
+  <p>대전 중에는 사용자가 고른 카드가 서버를 거쳐 같은 대전의 다른 플레이어에게 전달되어, 모든 기기에서 같은 전투가 진행됩니다.
+    대전 자체는 끝난 뒤 저장되지 않습니다. 다른 플레이어에게는 그 대전에서의 자리 이름과 사용자의 선택만 보입니다.</p>
+  <p>게임이 화면에 열려 있는 동안, 접속 중인 플레이어 수를 보여 주기 위해 서버와 연결을 유지합니다. 서버는 열린 연결의 수만
+    세며 그에 관해 아무것도 저장하지 않습니다. 게임이 백그라운드로 가면 연결이 닫힙니다.</p>
+  <p>다른 인터넷 서비스와 마찬가지로 서버는 응답을 위해 기기의 IP 주소를 처리하며, 서비스 운영과 문제 해결을 위해 짧은 기간
+    기술 로그를 보관합니다.</p>
+
+  <h2 id="purchases">3. 구매</h2>
+  <p>정식판과 티켓 팩은 <strong>App Store</strong> 또는 <strong>Google Play</strong>에서 구매하며,
+    <a href="https://www.apple.com/legal/privacy/">Apple</a> 또는 <a href="https://policies.google.com/privacy">Google</a>의
+    개인정보 처리방침이 적용됩니다. 당사는 카드나 결제 정보를 볼 수 없습니다. 티켓 팩을 지급하기 위해 당사 서버는 스토어의
+    영수증을 Apple 또는 Google에 보내 확인합니다.</p>
+  <p>게임은 Unity Technologies의 서비스인 <strong>Unity In-App Purchasing</strong>으로 구매를 처리합니다. 구매가 처리되는 동안
+    Unity는 구매 정보(상품, 가격, 거래), 기기 및 앱 식별자, 기기의 기술 정보(모델, 운영체제, 언어), 대략적인 위치(IP 주소로
+    파악한 국가), 진단 데이터를 받아 구매 서비스 운영과 중복 거래 방지에 사용합니다. 이에는
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity의 개인정보 처리방침</a>이 적용됩니다.
+    게임에 사용된 Unity 엔진도 같은 방침에 따라 기기의 하드웨어와 소프트웨어에 관한, 개인을 식별할 수 없는 기본 정보를 Unity에
+    보낼 수 있습니다.</p>
+
+  <h2>4. Steam에서</h2>
+  <p>PC에서는 게임과 업적이 Valve의 Steamworks 서비스를 통해 제공되며,
+    <a href="https://store.steampowered.com/privacy_agreement/">Valve의 개인정보 처리방침</a>이 적용됩니다.
+    당사는 Steam 비밀번호, 이메일, 결제 정보를 받지 않습니다.</p>
+
+  <h2>5. 정보의 이용 목적</h2>
+  <p>온라인 대전과 티켓 운영, 구매한 상품의 제공, 부정 행위와 중복 구매 방지, 문제 해결에만 이용합니다. 광고에 이용하지 않으며
+    판매하지 않습니다. 게임 운영에 필요한 서비스와만 공유합니다: DigitalOcean (당사 서버 호스트), Apple 또는 Google (구매),
+    Unity (구매).</p>
+
+  <h2>6. 보관 장소와 기간</h2>
+  <p>당사 서버는 싱가포르에 있으며, Unity, Apple, Google은 다른 국가에서 데이터를 처리할 수 있습니다. 온라인 계정, 티켓,
+    구매 기록은 게임의 온라인 대전이 운영되는 동안 또는 사용자가 삭제할 때까지 보관합니다. 서버 로그는 짧은 기간만 보관합니다.</p>
+
+  <h2 id="deleting">7. 데이터 삭제</h2>
+  <p>게임 안의 <strong>설정 &gt; 온라인 데이터 삭제</strong>에서 삭제할 수 있습니다. 익명 계정, 티켓, 그 기록이 당사 서버에서
+    즉시 삭제됩니다. 삭제한 티켓은 되돌릴 수 없습니다. 정식판은 Apple 또는 Google 계정에 속하므로 계속 사용자의 것입니다.
+    첫 티켓을 기기당 한 번만 지급하기 위해, 기기 식별자를 단방향으로 변환한 값(해시)만 보관하며 이 값으로는 원래 식별자를
+    복원할 수 없습니다. <a href="mailto:kuzostudiosph@gmail.com?subject=Bayani%20data%20deletion">kuzostudiosph@gmail.com</a>으로
+    이메일을 보내 주셔도 도와 드립니다. 게임을 삭제하면 기기에 저장된 모든 정보가 삭제됩니다.</p>
+
+  <h2>8. 아동</h2>
+  <p>Bayani: Auto Ascent는 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.
+    아동이 개인정보를 제공했다고 생각되시면 연락해 주십시오. 삭제하겠습니다.</p>
+
+  <h2>9. 이용자의 권리</h2>
+  <p>거주 지역에 따라 (예: 대한민국 개인정보 보호법, EU·영국 GDPR, 필리핀 2012년 데이터 프라이버시법) 데이터의 열람, 정정,
+    삭제를 요구하거나 그 이용에 이의를 제기할 권리가 있을 수 있습니다.
+    <a href="mailto:kuzostudiosph@gmail.com">kuzostudiosph@gmail.com</a>으로 연락해 주시면 도와 드립니다.</p>
+
+  <h2>10. 변경</h2>
+  <p>이 방침이 변경되면 상단의 날짜를 갱신하고 Discord에서 알려 드립니다.</p>
+
+  <footer>
+    © 2026 KuzoStudiosPH ·
+    <a href="https://store.steampowered.com/app/5550750/">Steam</a> ·
+    <a href="https://discord.gg/hMRAE6n7F3">Discord</a>
+  </footer>
+</main>
+</body>
+</html>
